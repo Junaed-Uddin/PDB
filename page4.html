@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/index.css">
+
+    <title>PDB</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <p style="text-align: center;">System Loss (%) Paltem ( BPDB Disc. ) From FY ; 2007-08 to FY: 2020-21 (Unto
+                Sep'20)</p>
+        </div>
+        <div class="row" style="margin-left: auto; margin-right: auto; display: block;">
+            <div class="col-md-12">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <p style="text-align: center;">System Loss (%) Paltem ( BPDB Disc. ) From FY ; 2007-08 to FY: 2020-21 (Unto
+                Sep'20)</p>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <canvas id="myChart1"></canvas>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <p><b>5.0 Transmission Loss Information :</b></p>
+            <p>Transmission Loss on.Net generation from FY ; <span>07-08 tc</span>  FY: <span>07-08 tc</span> are shown in bar graph as below :</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <canvas id="myChart2"></canvas>
+            </div>
+        </div>
+
+        <script>
+            var xValues = ["BPBD", "WZPDCL", "DPDC", "DESCO", "PBSs", "WZPDCL", "DPDC", "DESCO", "PBSs", "PBSs", "WZPDCL", "DPDC", "DESCO", "PBSs"];
+            var yValues = [5, 10, 30, 20, 40, 30, 35, 40, 50, 50, 55, 60, 65, 50];
+            var barColors = ["light", "light", "light", "light", "light", "light", "light", "light", "light", "light", "light", "light", "light", "light"];
+
+            new Chart("myChart", {
+                type: "bar",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                        backgroundColor: barColors,
+                        data: yValues
+                    }]
+                },
+                options: {
+                    legend: { display: false },
+                    title: {
+                        display: true,
+                    }
+                }
+            });
+
+            new Chart("myChart1", {
+                type: "bar",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                        backgroundColor: barColors,
+                        data: yValues
+                    }]
+                },
+                options: {
+                    legend: { display: false },
+                    title: {
+                        display: true,
+                    }
+                }
+            });
+
+            new Chart("myChart2", {
+                type: "bar",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                        backgroundColor: barColors,
+                        data: yValues
+                    }]
+                },
+                options: {
+                    legend: { display: false },
+                    title: {
+                        display: true,
+                        text: "Transmission Loss (%) on Net Generation"
+                    }
+                }
+            });
+        </script>
+
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="JS/script.min.js"></script>
+</body>
+
+</html>
