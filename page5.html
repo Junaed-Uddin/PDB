@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/index.css">
+
+    <title>PDB</title>
+</head>
+
+<body>
+
+    <div class="container mt-4">
+        <p style="text-align: center; text-decoration: underline;">System Loss (%) Paltem ( BPDB Disc. ) From FY ;
+            <span>2007-08</span> to
+            FY: <span>2007-08</span> <span> Upto (2007-08)</span>
+        </p>
+        </p>
+
+        <div class="row">
+            <div class="col-md-12">
+                <canvas id="myChart" style=" max-width: 1300px; max-height: 500px;"></canvas>
+            </div>
+        </div>
+
+        <p class="mt-5" style="text-align: center; text-decoration: underline;">BPDB Distribution c/l Ratio(%)
+            <span> Upto (2007-08)</span>
+        </p>
+
+        <div class="row">
+            <div class="col-md-12">
+                <canvas id="myChart1" style=" max-width: 1300px; max-height: 500px;"></canvas>
+            </div>
+        </div>
+
+        <script>
+            var xValues = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+            var yValues = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+
+            new Chart("myChart", {
+                type: "line",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                        fill: false,
+                        lineTension: 0,
+                        backgroundColor: "rgba(0,0,255,1.0)",
+                        borderColor: "rgba(0,0,255,0.1)",
+                        data: yValues
+                    }]
+                },
+                options: {
+                    legend: { display: false },
+                    scales: {
+                        yAxes: [{ ticks: { min: 6, max: 16 } }],
+                    }
+                }
+            });
+            new Chart("myChart1", {
+                type: "line",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                        fill: false,
+                        lineTension: 0,
+                        backgroundColor: "rgba(0,0,255,1.0)",
+                        borderColor: "rgba(0,0,255,0.1)",
+                        data: yValues
+                    }]
+                },
+                options: {
+                    legend: { display: false },
+                    scales: {
+                        yAxes: [{ ticks: { min: 6, max: 16 } }],
+                    }
+                }
+            });
+        </script>
+        <div class="row mt-4">
+            <p>6.0 CONSUMFR IN BPDB:</p>
+            <p><b>6.a. Bulk Consumer</b></p>
+            <p>Number of Bulk consumer in the month of <span>Sep,20</span> was <span>80</span> (DPDC, DESCO, WZPDCL,
+                NWPDCL & <span>80</span> no'.c PBS) No's. respectively & consumer billed was <span>100%</span> compared to
+                <span>100%</span> in the previous month.</p>
+        </div>
+
+        <div class="row mt-4">
+            <p><b>6.b. Bulk Consumer</b></p>
+            <p>Number of Total Retail consumerand Active Retail in the month of <span>Sep,20</span> was <span>80</span> (DPDC, DESCO, WZPDCL, NWPDCL & <span>80</span> no'.c PBS) No's. & consumer billed was <span>100%</span> compared to
+                <span>100%</span> in the previous month.</p>
+        </div>
+
+        <div class="row mt-4">
+            <p>7.0 ACCOUNTS RECEIVABLE/OUTSTANDING BILL:</p>
+            <p><b>7.a. Bulk</b></p>
+            <p>The Accounts receivable ( Principle Amount ) from the bulk consumer at the end of the <span>september.20</span>  was <span>83,683.96</span> MTk. Acounts receivable (Principle Amount) from DESA were <span>83,683.96</span> MTk. and DPDC were <span>83,683.96</span> MTk. tDPDC's equivalent to <span>3.08</span> months)</p>
+        </div>
+
+        <div class="row mt-4">
+            <p><b>7.b. Retail</b></p>
+            <p>The Accounts receivable ( Principle Amount ) from the Retail consumer of BPDB at the end of the <span>september.20</span> was 
+                <span>83,683.96</span> MTk.  <span>3.08</span> months)</p>
+        </div>
+
+        <div class="row mt-5" style="float: right;">
+            <p style="text-align: center;">(Badhan Chandra Bkash) <br> General Manager <br> Commercial Operation, BPDB, Dhaka </p>
+            
+        </div>
+
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="JS/script.min.js"></script>
+</body>
+
+</html>
